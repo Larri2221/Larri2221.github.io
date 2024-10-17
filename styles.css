@@ -1,0 +1,36 @@
+html > .page-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 147px;
+  background-color: blueviolet;
+  backdrop-filter: blur(20px);
+}
+
+.page-header__container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1414px;
+  width: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+  background-color: rgb(26, 16, 135);
+}
+
+.page-footer {
+  flex: 0 0 auto;
+  background-color: rgb(135, 13, 56);
+}
