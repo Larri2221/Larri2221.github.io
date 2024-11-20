@@ -1,10 +1,89 @@
-<div class="event-pp">
-    <div class="pp_wrapper">
-        <form class="pp_form form">
-            <label class="field">
-                <span class="fiels__logo"></span>
-                <input type="text" name="Имя" placeholder="Имя" class="field__input" required></input>
-            </label>
-        </form>
+<div class="pp">
+    <div class="pp__wrapper">
+        <div class="pp__sticky-close">
+            <button
+                type="button"
+                title="Закрыть"
+                class="pp__x-btn js-ppCloseBtn"
+            >
+                <svg class="x-btn__icon" width="12" height="12">
+                    <use xlink:href="assets/icons/symbols.svg#x"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="pp__container">
+            <h2 class="pp__title">Заполните форму<br />и мы подберем площадку</h2>
+            <form class="pp__form form">
+                <div class="form__list">
+                    <div class="form__field form__field--w50 field">
+                        <h6 class="field__title"> Формат мероприятия</h6>
+                        <div class="radio">
+                            <labal class="radio__item">
+                                <input type="radio" name="format" value="master-class" class="radio__input"/>
+                                <span class = "radio__marker"> </span>
+                                <span class = "radio__label"> Мастер-класс/семинар</span>
+                            </labal>
+                            <labal class="radio__item">
+                                <input type="radio" name="format" value="concert" class="radio__input"/>
+                                <span class = "radio__marker"> </span>
+                                <span class = "radio__label"> Концерт/выступление</span>
+                            </labal>
+                            <labal class="radio__item">
+                                <input type="radio" name="format" value="pokaz" class="radio__input"/>
+                                <span class = "radio__marker"> </span>
+                                <span class = "radio__label"> Выставка/показ </span>
+                            </labal>
+                            <labal class="radio__item">
+                                <input type="radio" name="format" value="other" class="radio__input"/>
+                                <span class = "radio__marker"> </span>
+                                <span class = "radio__label"> Другое </span>
+                            </labal>
+                        </div>      
+                    </div>
+                    <div class="form__group form__group--w50">
+                        <label class="form__field form__field--mb30 field">
+                            <span class="field__title">
+                                Планируемое колличество посетителей:
+                            </span>
+                            <select name="amount" class="field__select">
+                                <option value="20"> до 20 человек</option>
+                                <option value="50"> от 20 до 50 человек</option>
+                                <option value="100"> от 100 до 500 человек</option>
+                                <option value="1000"> более 500 человек</option>
+                            </select>
+                        </label>
+                        <div class="form__field field">
+                            <h6 class="field__title">
+                                Дата проведения:
+                            </h6>
+                            <div class="field__date">
+                                <div class="field__date-inputs">
+                                    <input type="text" class="field__date-input" placeholder = "ДД" readonly>
+                                    <input type="text" class="field__date-input" placeholder = "ММ" readonly>
+                                    <input type="text" class="field__date-input field__date-input--w100" placeholder = "ГГГГ" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="field">
+                    <span class="field__label">Имя</span>
+                    <input
+                        type="text"
+                        name="Имя"
+                        placeholder="Имя"
+                        class="field__input"
+                        required
+                    />  
+                </label> 
+                </label>
+                <label class="check">
+                    <input type="checkbox" class="check__input" name="agree"/>
+                    <span class="check__mark"></span>
+                    <span class="check__label"> Я согласен с политикой конфидициальности</span>
+                </label>
+            </form>
+        </div>
     </div>
 </div>
