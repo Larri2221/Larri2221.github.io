@@ -61,28 +61,74 @@
                                 <div class="field__date-inputs">
                                     <input type="text" class="field__date-input" placeholder = "ДД" readonly>
                                     <input type="text" class="field__date-input" placeholder = "ММ" readonly>
-                                    <input type="text" class="field__date-input field__date-input--w100" placeholder = "ГГГГ" readonly>
+                                    <input type="text" class="field__date-input field__date-input--w110" placeholder = "ГГГГ" readonly>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <label class="field">
-                    <span class="field__label">Имя</span>
-                    <input
-                        type="text"
-                        name="Имя"
-                        placeholder="Имя"
-                        class="field__input"
-                        required
-                    />  
-                </label> 
+                <div class="form__section">
+                    <h6 class="form__title"> Контактные данные:</h6>
+                    <div class="form__list">
+                        <label class="form__field form__field--w50 field">
+                            <span class="field__label">Имя</span>
+                            <input
+                                type="text"
+                                name="Имя"
+                                placeholder="Имя"
+                                class="field__input"
+                                required
+                            />
+                        </label>
+                        <label class="form__field form__field--w50 field">
+                            <span class="field__label">Фамилия</span>
+                            <input
+                                type="text"
+                                name="Фамилия"
+                                placeholder="Фамилия"
+                                class="field__input"
+                                required
+                            />
+                        </label>
+                        <label class="form__field form__field--w50 field">
+                            <span class="field__label">Телефон</span>
+                            <input
+                                type="tel"
+                                name="Телефон"
+                                placeholder="+7 (___) ___ __ __"
+                                class="field__input"
+                                required
+                            />
+                        </label>
+                        <label class="form__field form__field--w50 field">
+                            <span class="field__label">Email</span>
+                            <input
+                                type="Email"
+                                name="Email"
+                                placeholder="Email"
+                                class="field__input"
+                                required
+                            />
+                        </label>
+                    </div>
+                </div>
+
+                <label class="form__field form__field--mb30 field">
+                    <span class="field__title">Есть пожелания? гнапришите нам:</span>
+                    
+                    <textarea name="text"  class="field__textarea">
+
+                    </textarea>
                 </label>
                 <label class="check">
                     <input type="checkbox" class="check__input" name="agree"/>
                     <span class="check__mark"></span>
                     <span class="check__label"> Я согласен с политикой конфидициальности</span>
                 </label>
+                <div class="form__btns">
+                    <button type="submit" class="form__btn">Отправить</button>
+                    <button type="button" class="form__btn-close" Закрыть ></button>
+                </div>
             </form>
         </div>
     </div>
