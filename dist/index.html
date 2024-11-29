@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="#" class="page-header__logo">
+        <img src="assets/logo.svg" class="page-header__logo-icon" alt="logo" />
+      </a>
+      <div сlass="page-header__nav">
+        <a href="" class="page-header__nav-link">Мероприятие</a>
+        <a href="" class="page-header__nav-link">блог</a>
+        <a href="" class="page-header__nav-link">о нас</a>
+        <a href="" class="page-header__nav-link">контакты</a>
+      </div>
+      <button type="button" class="page-header__btn btn"></button>
+    </div>
+  </header>
+  <main class="main">main</main>
+  <footer class="page-footer">footer</footer>
+  <div class="pp">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button type="button" title="Закрыть" class="pp__x-btn js-ppCloseBtn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+        <form class="pp__form form">
+          <div class="form__list">
+            <div class="form__field form__field--w50 field">
+              <h6 class="field__title"> Формат мероприятия</h6>
+              <div class="radio">
+                <labal class="radio__item">
+                  <input type="radio" name="format" value="master-class" class="radio__input" />
+                  <span class="radio__marker"> </span>
+                  <span class="radio__label"> Мастер-класс/семинар</span>
+                </labal>
+                <labal class="radio__item">
+                  <input type="radio" name="format" value="concert" class="radio__input" />
+                  <span class="radio__marker"> </span>
+                  <span class="radio__label"> Концерт/выступление</span>
+                </labal>
+                <labal class="radio__item">
+                  <input type="radio" name="format" value="pokaz" class="radio__input" />
+                  <span class="radio__marker"> </span>
+                  <span class="radio__label"> Выставка/показ </span>
+                </labal>
+                <labal class="radio__item">
+                  <input type="radio" name="format" value="other" class="radio__input" />
+                  <span class="radio__marker"> </span>
+                  <span class="radio__label"> Другое </span>
+                </labal>
+              </div>
+            </div>
+            <div class="form__group form__group--w50">
+              <label class="form__field form__field--mb30 field">
+                <span class="field__title">
+                  Планируемое колличество посетителей:
+                </span>
+                <select name="amount" class="field__select">
+                  <option value="20"> до 20 человек</option>
+                  <option value="50"> от 20 до 50 человек</option>
+                  <option value="100"> от 100 до 500 человек</option>
+                  <option value="1000"> более 500 человек</option>
+                </select>
+              </label>
+              <div class="form__field field">
+                <h6 class="field__title">
+                  Дата проведения:
+                </h6>
+                <div class="field__date">
+                  <div class="field__date-inputs">
+                    <input type="text" class="field__date-input" placeholder="ДД" readonly>
+                    <input type="text" class="field__date-input" placeholder="ММ" readonly>
+                    <input type="text" class="field__date-input field__date-input--w110" placeholder="ГГГГ" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__section">
+            <h6 class="form__title"> Контактные данные:</h6>
+            <div class="form__list">
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">Имя</span>
+                <input type="text" name="Имя" placeholder="Имя" class="field__input" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">Фамилия</span>
+                <input type="text" name="Фамилия" placeholder="Фамилия" class="field__input" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">Телефон</span>
+                <input type="tel" name="Телефон" placeholder="+7 (___) ___ __ __" class="field__input" required />
+              </label>
+              <label class="form__field form__field--w50 field">
+                <span class="field__label">Email</span>
+                <input type="Email" name="Email" placeholder="Email" class="field__input" required />
+              </label>
+            </div>
+          </div>
+
+          <label class="form__field form__field--mb30 field">
+            <span class="field__title">Есть пожелания? гнапришите нам:</span>
+
+            <textarea name="text" class="field__textarea">
+
+                    </textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="check__input" name="agree" />
+            <span class="check__mark"></span>
+            <span class="check__label"> Я согласен с политикой конфидициальности</span>
+          </label>
+          <div class="form__btns">
+            <button type="submit" class="form__btn">Отправить</button>
+            <button type="button" class="form__btn-close" Закрыть></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
