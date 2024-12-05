@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="X" viewBox="0 0 24 24"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="ok" viewBox="0 0 26 26"><g fill="none">
+    <circle cx="13" cy="13" r="13" fill="#1F1E1E"/>
+    <path d="M19.71 8.21a1 1 0 0 0-1.42 0l-7.45 7.46-3.13-3.14A1.02 1.02 0 1 0 6.29 14l3.84 3.84a1.002 1.002 0 0 0 1.42 0l8.16-8.16a1 1 0 0 0 0-1.47Z" fill="#fff"/>
+</g></symbol><symbol id="X" viewBox="0 0 24 24"><g fill="none">
     <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol></svg>
