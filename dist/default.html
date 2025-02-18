@@ -9,23 +9,41 @@
 </head>
 
 <body class="body">
-  <div class="page-header">
+  <header class="page-header">
     <div class="page-header__container">
-
       <a href="#" class="page-header__logo">
-        <img src="assets/images/logo.svg" class="page-header__logo-icon" alt="logo">
+        <svg class="page-header__logo-icon" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
       </a>
+
       <nav class="page-header__nav">
         <a href="#" class="page-header__nav-link">Мероприятия</a>
         <a href="#" class="page-header__nav-link">Блог</a>
-        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">В нас</a>
         <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <a href="#" class="page-header_nav-user-link">
+          Александр С.
+          <svg class="page-header__user-icon" width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#door"></use>
+          </svg>
+        </a>
       </nav>
+
       <div class="page-header__right-block">
-        <a href="#" class="page-header__btn btn">Войти</a>
+        <a href="#" class="page-header__user-btn btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
       </div>
     </div>
-  </div>
+  </header>
+
   <main class="main">
     <article class="article">
       <div class="article__container">
