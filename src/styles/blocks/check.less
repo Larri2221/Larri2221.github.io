@@ -29,18 +29,37 @@
     }
 }
 }
-        &__mark {
-          box-sizing: border-box;
-          display: block;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 24px;
-          height: 24px;
-          border: 1px solid @black;
-          background-color: @black;
-          transition: background-color 0.2s;
-        }
+&_mark {  
+    box-sizing: border-box;  
+    display: block;  
+    position: absolute;  
+    left: 0;  
+    top: 0;  
+    width: 24px;  
+    height: 24px;  
+    border: 1px solid black;  
+
+    &--gray {  
+        box-sizing: border-box;  
+        display: block;  
+        position: absolute;  
+        left: 0;  
+        top: 0;  
+        width: 24px;  
+        height: 24px;  
+        border: 1px solid gray;  
+    } 
+    &--red {  
+        box-sizing: border-box;  
+        display: block;  
+        position: absolute;  
+        left: 0;  
+        top: 0;  
+        width: 24px;  
+        height: 24px;  
+        border: 1px solid red;  
+    }   
+}
         &__label{
             margin-left: 15px;
             font-weight: 400;

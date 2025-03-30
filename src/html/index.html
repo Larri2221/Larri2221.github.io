@@ -4,17 +4,27 @@
     <body class="body">
         @@include('blocks/page-header.html')
         <main class="main">
-            <svg class="table__td-icon" width="26" height="26">
-                <use xlink:href="assets/icons/symbols.svg#logo"></use>
-            </svg>
-            <svg class="table__td-icon" width="26" height="26">
-                <use xlink:href="assets/icons/symbols.svg#home"></use>
-            </svg>
-            <svg width="26" height="26">
-                <use xlink:href="assets/icons/symbols.svg#home"></use>
-            </svg>
+            <div class="center-block">  
+                <p class="center-block__element1">АРТ-ПРОСТРАНСТВО</p>  
+                <picture class="center-block__logo">  
+                    <img src="assets/images/LENNI.svg" alt="logo" class="center-block__img">  
+                </picture>  
+                <p class="center-block__element2">ДЛЯ ЛЮДЕЙ, ГОРЯЩИХ СЕРДЦЕМ И ДЕЛОМ</p>  
+                <p class="center-block__element3">МЕСТО ДЛЯ НАСТОЯЩЕГО</p>
+            </div>  
+            <div class="section">  
+                <p class="section_center">Я ХОЧУ:</p>  
+                <div class="section_bottom">  
+                    <p class="btn_section1">Провести мероприятие</p>  
+                    <p class="btn_section2">Стать арендатором</p>  
+                </div>  
+            </div>
+            <h1 class="center-block__title section-title">О НАС</h1>      
+            @@include('blocks/about.html')
+            @include('blocks/contacts.html')
         </main>
-        <footer class="page-footer">footer</footer>
-        @@include('blocks/event-pp.html')
+        @include('blocks/page-footer.html')  
+        @include('blocks/event-pp.html')  
+        <script src="scripts/main.min,js"></script>
     </body>
 </html>

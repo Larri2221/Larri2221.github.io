@@ -1,9 +1,11 @@
 .content{
-    font-family: @font1;
-    font-weight:400 ;
-    font-size: 16px;
-    line-height: 1.375;
-    word-wrap: break-word;
+    color: @black;  
+    font-family: @font1;  
+    font-size: 16px;  
+    font-weight: 400;  
+    font-style: normal;  
+    line-height: 1.375;  
+    word-wrap: break-word; 
 
     h1,
     h2,
@@ -11,14 +13,16 @@
     h4,
     h5,
     h6{
-        margin: 1.3em 0 8em;
-        font-weight: 600;
-        &:first-child{
-            margin-top: 0;
-        }
-        &:last-child{
-            margin-bottom: 0;
-        }
+        margin: 1.3em 0 0.8em;  
+        font-family: @font1;  
+        font-weight: 600;  
+        color: @black;  
+        &:first-child {  
+            margin-top: 0;  
+        }  
+        &:last-child {  
+            margin-bottom: 0;  
+        }  
     }
     h1{
         font-size: 32px;
@@ -55,6 +59,7 @@
         }
 
     }
+    
     ul,
     ol{
         position: relative;
@@ -90,6 +95,7 @@
             display: inline-block;
             min-width: 20px;
             color: @red;
+            white-space: pre;
         }
     }
     ol > li, ul > li{
@@ -151,6 +157,13 @@
         margin-left: 10px;
     }
     &.alignright,
-    &[align]
+    &[align='right']{
+        float: right;
+    }
+    &.alignleft,
+    &[align='left']{
+        margin-right: 10px;
+        float: left;
+    }
     }
 }

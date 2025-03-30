@@ -1,21 +1,47 @@
+.clearfix{
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .container {
     box-sizing: border-box;
     width: 100%;
     max-width: 1414px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+  @media @bw1340{
+    padding-left: 30px;
+    padding-right: 30px;
   }
+  @media @bw768{
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  }
+.width_624{
+  box-sizing: border-box;
+  max-width: 624px;
+  width: 100%;
+  @media @bw1660{
+    max-width: 604px;
+  }
+  @media @bw1340{
+    max-width: 504px;
+  }
+}
+
+
   .is-hidden {
     position: absolute !important;
     width: 0 !important;
     height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
     border: 0 !important;
-    clip: rect(0 0 0 0) !important;
-    clip-path: inset(100%) !important;
+    clip-path: none !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     visibility: hidden !important;
